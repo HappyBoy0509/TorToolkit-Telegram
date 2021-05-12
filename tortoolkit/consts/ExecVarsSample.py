@@ -6,18 +6,18 @@ except:
         # TODO optimize for vps use fully - currently only heroku is focused
         # Set true if its VPS [currently not fully working]
         IS_VPS = False
-        API_HASH = os.environ.get("API_HASH")
-        API_ID = int(os.environ.get("APP_ID", 12345))
-        BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
+        API_HASH = os.environ.get("API_HASH", "2930bc7ce6fefec9b361d14365ca0d40")
+        API_ID = int(os.environ.get("APP_ID", "1662287"))
+        BOT_TOKEN = os.environ.get("BOT_TOKEN", "1368683859:AAFE_ZSWtmIqjrBfX0_Kt2T5PqfOjJu5nT4")
         BASE_URL_OF_BOT = os.environ.get("BASE_URL_OF_BOT", "")
         # ALLOWED USERS [ids of user or supergroup] seperate by commas
-        ALD_USR = set(int(x) for x in os.environ.get("AUTH_CHANNEL", "").split())
+        ALD_USR = set(int(x) for x in os.environ.get("AUTH_CHANNEL", "-1001433102222").split())
         
         # Google Drive Index Link should include the base dir also See readme for more info
         GD_INDEX_URL = os.environ.get("GD_INDEX_URL", "False")
 
         # Time to wait before edit message
-        EDIT_SLEEP_SECS = int(os.environ.get("EDIT_SLEEP_TIME_OUT", 15))
+        EDIT_SLEEP_SECS = int(os.environ.get("EDIT_SLEEP_TIME_OUT", 30))
 
         # Telegram Upload Limit (in bytes)
         TG_UP_LIMIT = 1700000000
